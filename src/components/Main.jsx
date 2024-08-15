@@ -32,9 +32,20 @@ const Main = () => {
     />
             </h2>
             <div className='flex justify-between pt-6 max-w-[200px] w-full'>
-            <FaGithub className='cursor-pointer text-white w-8 h-8' size={20} />
-            <FaLinkedin className='cursor-pointer text-white w-8 h-8' size={20} />
-
+            <a 
+              href="https://github.com/Lydoww" 
+              target="_blank" 
+              aria-label="GitHub"
+            >
+              <FaGithub className='cursor-pointer text-white w-8 h-8' size={20} />
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/alexis-helm/" 
+              target="_blank" 
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin className='cursor-pointer text-white w-8 h-8' size={20} />
+            </a>
             </div>
             </div>
         </div>
