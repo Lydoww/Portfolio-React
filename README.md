@@ -33,4 +33,4 @@ Feel free to reach out to me for any questions or feedback:
 - **Email**: alexis94340@gmail.com
 - **LinkedIn**: [Alexis HELM](https://www.linkedin.com/in/alexis-helm/)
 
-Thank you for visiting my portfolio!
+Thank you for visiting my portfolio !
