@@ -23,7 +23,7 @@ const Projects = () => {
         <ProjectItem
           title='Pokedex'
           img={Pokedex}
-          description='Pokedex application with a React.'
+          description='Pokedex application with React.'
           repoUrl='https://github.com/Lydoww/Pokedex-React'
         />
         <ProjectItem
