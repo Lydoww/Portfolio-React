@@ -14,11 +14,6 @@ Welcome to my portfolio repository! This project showcases my personal work and 
 - **Dynamic Content**: Built with React to handle dynamic content and interactivity.
 - **Fast Build Times**: Leveraging Vite for a quick development experience.
 
-## 📸 Screenshots
-
-![Homepage Screenshot](./screenshots/homepage.png)
-![Projects Screenshot](./screenshots/projects.png)
-
 ## 🛠️ Built With
 
 - [React](https://reactjs.org/)
