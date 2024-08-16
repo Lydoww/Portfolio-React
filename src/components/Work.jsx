@@ -21,18 +21,18 @@ const data = [
       duration: '1.5 year',
       details: 'I ensure operational excellence for major accounts, including Nestlé, Ecosystèmes, and Decathlon. This involves producing weekly performance reports and optimizing operational processes in collaboration with Carrier Managers. Additionally, I autonomously manage smaller client accounts.'
   },
-  {
-    year: 2023,
-    title: 'Web developer',
-    duration: '1 year',
-    details: 'I recently completed a web developer bootcamp, where I gained hands-on experience in coding and web development. During this time, I also worked on several personal projects, which helped me to apply my new skills and deepen my understanding of various development tools and methodologies.'
-},
+    {
+      year: 2023,
+      title: 'Web developer',
+      duration: '1 year',
+      details: 'I recently completed a web developer bootcamp, where I gained hands-on experience in coding and web development. During this time, I also worked on several personal projects, which helped me to apply my new skills and deepen my understanding of various development tools and methodologies.'
+  },
 ]
 const Work = () => {
   return (
     <FadeInSection>
     <div id='work' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
-      <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Work</h1>
+      <h1 className='text-4xl font-bold text-center text-[#001b5e] mb-7'>Work</h1>
       {data.map((item, index) => (
         <WorkItem key={index} year={item.year} title={item.title} duration={item.duration} details={item.details} />
       ))}
