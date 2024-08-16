@@ -22,23 +22,15 @@ Welcome to my portfolio repository! This project showcases my personal work and 
 
 ## 🔗 Links
 
-- [Live Demo](https://your-live-portfolio-url.com)  <!-- Replace with your Netlify URL -->
-- [GitHub Repository](https://github.com/yourusername/your-portfolio-repo)
+- [Live Demo](https://alexis-helm-portfolio.netlify.app/) 
+- [GitHub Repository](https://github.com/Lydoww/Portfolio-React)
 
-## 🤝 Contributing
-
-If you'd like to contribute to this project, please fork the repository and submit a pull request. For any issues or feature requests, open an issue in the repository.
-
-## 📜 License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 ## Contact
 
 Feel free to reach out to me for any questions or feedback:
 
-- **Email**: your-email@example.com
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
-- **Twitter**: [@yourusername](https://twitter.com/yourusername)
+- **Email**: alexis94340@gmail.com
+- **LinkedIn**: [Alexis HELM](https://www.linkedin.com/in/alexis-helm/)
 
 Thank you for visiting my portfolio!
