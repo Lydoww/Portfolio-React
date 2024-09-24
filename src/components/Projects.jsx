@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import Hangman from "../assets/Hangman.png";
+import Lapince from "../assets/Lapince.png";
 import Pokedex from "../assets/Pokedex.png";
 import Todo from "../assets/Todo.png";
 import FadeInSection from "./FadeInSection";
@@ -23,10 +23,10 @@ const Projects = () => {
         </p>
         <div className="grid sm:grid-cols-2 gap-12">
           <ProjectItem
-            title="Hangman"
-            img={Hangman}
-            description="A fun word-guessing game built with React & TypeScript."
-            repoUrl="https://github.com/Lydoww/HangmanGame"
+            title="La Pince"
+            img={Lapince}
+            description="Banking app built with React, Node, Express, PostgreSQL, and Sequelize, enabling users to efficiently manage their finances."
+            repoUrl="https://la-pince-front.vercel.app/"
           />
           <ProjectItem
             title="Pokedex"
