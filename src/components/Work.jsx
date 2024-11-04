@@ -23,10 +23,16 @@ const data = [
   },
     {
       year: 2023,
-      title: 'Web developer',
+      title: 'Web Developer',
       duration: '1 year',
       details: 'I recently completed a web developer bootcamp, where I gained hands-on experience in coding and web development. During this time, I also worked on several personal projects, which helped me to apply my new skills and deepen my understanding of various development tools and methodologies.'
   },
+  {
+    year: 2024,
+    title: 'Full Stack Developer - Fixed-Term Contract - Makara',
+    duration: '3 months',
+    details: 'Contributed to the complete redesign and development of an innovative web and mobile application for merchants, enabling them to centralize and manage their social media posts. We worked on the entire stack, migrating the backend from PHP to Symfony and the frontend to React.js.'
+},
 ]
 const Work = () => {
   return (
