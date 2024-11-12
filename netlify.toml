@@ -1,0 +1,10 @@
+[build]
+  # La commande qui lance le processus de build
+  command = "npm run build"  # Ou "yarn build" si vous utilisez yarn
+
+  # Le répertoire où Netlify doit publier les fichiers générés après le build
+  publish = "dist"  # Par défaut, Vite crée le répertoire "dist" pour les fichiers de build
+
+[context.production.environment]
+  # Définir la version de Node.js utilisée pour le build (si ce n'est pas déjà configuré ailleurs)
+  NODE_VERSION = "20.14.0"
