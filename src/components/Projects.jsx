@@ -26,7 +26,7 @@ const Projects = () => {
             title="La Pince"
             img={Lapince}
             description="Banking app built with React, Node, Express, PostgreSQL, and Sequelize, enabling users to efficiently manage their finances."
-            repoUrl="https://la-pince-front.vercel.app/"
+            repoUrl="https://lapinceapi.vercel.app/"
           />
           <ProjectItem
             title="Pokedex"
