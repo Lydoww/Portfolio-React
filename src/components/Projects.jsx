@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
+import { MdOutlineSwipe } from "react-icons/md"; // ✅ Import de l'icône
 import FadeInSection from "./FadeInSection";
-import projects from "../data/projectsData"; // Assure-toi que le chemin est correct
+import projects from "../data/projectsData";
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,7 +12,6 @@ const Projects = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
   const carouselRef = useRef(null);
 
-  // 🔥 Met à jour le mode mobile/déktop
   useEffect(() => {
     const updateScreenSize = () => {
       setIsMobile(window.innerWidth < 1024);
@@ -128,43 +128,11 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* 🔥 Flèches affichées UNIQUEMENT sur Desktop */}
-        {!isMobile && (
-          <>
-            <button
-              onClick={() => setCurrentIndex(Math.max(0, currentIndex - 1))}
-              className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center transition-opacity ${
-                currentIndex === 0 ? "opacity-0" : "opacity-100"
-              }`}
-              disabled={currentIndex === 0}
-            >
-              <svg
-                className="w-6 h-6 text-gray-600"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-
-            <button
-              onClick={() => setCurrentIndex(Math.min(maxIndex, currentIndex + 1))}
-              className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center transition-opacity ${
-                currentIndex >= maxIndex ? "opacity-0" : "opacity-100"
-              }`}
-              disabled={currentIndex >= maxIndex}
-            >
-              <svg
-                className="w-6 h-6 text-gray-600"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </>
+        {/* 🔥 Icône "Swipe" affichée uniquement sur mobile */}
+        {isMobile && (
+          <div className="mt-4 flex justify-center items-center">
+            <MdOutlineSwipe size={40} className="text-gray-600 animate-bounce" />
+          </div>
         )}
       </FadeInSection>
     </div>
