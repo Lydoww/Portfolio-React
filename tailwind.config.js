@@ -6,6 +6,9 @@ export default {
       animation: {
         fadeIn: "fadeIn 1.5s ease-out",
       },
+      screens: {
+        xxl: "1335px", // Breakpoint personnalisé pour cacher la sidenav à 1335px
+      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: "0", transform: "translateY(20px)" },
