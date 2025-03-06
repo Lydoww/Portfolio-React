@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { MdOutlineSwipe } from "react-icons/md"; // ✅ Import de l'icône
+import { MdOutlineSwipe, MdChevronLeft, MdChevronRight } from "react-icons/md"; // Import des icônes
 import FadeInSection from "./FadeInSection";
 import projects from "../data/projectsData";
 
@@ -55,6 +55,14 @@ const Projects = () => {
     setTranslateX(0);
   };
 
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, maxIndex));
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+  };
+
   return (
     <div id="projects" className="max-w-[1200px] mx-auto px-4 py-16 relative">
       <FadeInSection>
@@ -71,59 +79,81 @@ const Projects = () => {
         </p>
 
         {/* 🔥 Container qui gère le drag uniquement sur mobile */}
-        <div
-          className="relative bg-slate-200 rounded-lg py-6 overflow-hidden"
-          ref={carouselRef}
-          onMouseDown={isMobile ? handleDragStart : null}
-          onMouseMove={isMobile ? handleDragMove : null}
-          onMouseUp={isMobile ? handleDragEnd : null}
-          onMouseLeave={isMobile ? handleDragEnd : null}
-          onTouchStart={handleDragStart}
-          onTouchMove={handleDragMove}
-          onTouchEnd={handleDragEnd}
-        >
-          <div className="overflow-hidden">
-            <div
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{
-                transform: `translateX(calc(-${
-                  currentIndex * (100 / projectsPerPage)
-                }% + ${translateX}px))`,
-              }}
+        <div className="relative">
+          {/* Flèche gauche */}
+          {!isMobile && currentIndex > 0 && (
+            <button
+              onClick={handlePrev}
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg z-10"
             >
-              {projects.map((project, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 px-4"
-                  style={{ width: `${100 / projectsPerPage}%` }}
-                >
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
-                    <div className="aspect-video relative overflow-hidden bg-gray-100">
-                      <img
-                        src={project.img}
-                        alt={project.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="p-6 flex flex-col flex-grow">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                        {project.title}
-                      </h3>
-                      <p className="text-gray-600 mb-4 flex-grow">
-                        {project.description}
-                      </p>
-                      <a
-                        href={project.repoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block bg-[#001b5e] text-white px-6 py-2 rounded-md hover:bg-[#002a8e] transition-colors mt-auto"
-                      >
-                        More Info
-                      </a>
+              <MdChevronLeft size={40} className="text-gray-600" />
+            </button>
+          )}
+
+          {/* Flèche droite */}
+          {!isMobile && currentIndex < maxIndex && (
+            <button
+              onClick={handleNext}
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg z-10"
+            >
+              <MdChevronRight size={40} className="text-gray-600" />
+            </button>
+          )}
+
+          <div
+            className="relative bg-slate-200 rounded-lg py-6 overflow-hidden"
+            ref={carouselRef}
+            onMouseDown={isMobile ? handleDragStart : null}
+            onMouseMove={isMobile ? handleDragMove : null}
+            onMouseUp={isMobile ? handleDragEnd : null}
+            onMouseLeave={isMobile ? handleDragEnd : null}
+            onTouchStart={handleDragStart}
+            onTouchMove={handleDragMove}
+            onTouchEnd={handleDragEnd}
+          >
+            <div className="overflow-hidden">
+              <div
+                className="flex transition-transform duration-500 ease-in-out"
+                style={{
+                  transform: `translateX(calc(-${
+                    currentIndex * (100 / projectsPerPage)
+                  }% + ${translateX}px))`,
+                }}
+              >
+                {projects.map((project, index) => (
+                  <div
+                    key={index}
+                    className="flex-shrink-0 px-4"
+                    style={{ width: `${100 / projectsPerPage}%` }}
+                  >
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                      <div className="aspect-video relative overflow-hidden bg-gray-100">
+                        <img
+                          src={project.img}
+                          alt={project.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="p-6 flex flex-col flex-grow">
+                        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                          {project.title}
+                        </h3>
+                        <p className="text-gray-600 mb-4 flex-grow">
+                          {project.description}
+                        </p>
+                        <a
+                          href={project.repoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block bg-[#001b5e] text-white px-6 py-2 rounded-md hover:bg-[#002a8e] transition-colors mt-auto"
+                        >
+                          More Info
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
