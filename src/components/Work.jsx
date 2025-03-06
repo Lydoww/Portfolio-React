@@ -18,9 +18,9 @@ const data = [
       "I focus on the ethical optimization of the supply chain, assessing client needs, and developing strategic recommendations. Additionally, I ensure that deadlines and budgets are met.",
   },
   {
-    year: 2022,
-    title: "Account Manager - Sennder",
-    duration: "1.5 year",
+    year: 2021,
+    title: "Senior Account Manager - Sennder",
+    duration: "2.5 year",
     details:
       "I ensure operational excellence for major accounts, including Nestlé, Ecosystèmes, and Decathlon. This involves producing weekly performance reports and optimizing operational processes in collaboration with Carrier Managers. Additionally, I autonomously manage smaller client accounts.",
   },
@@ -41,9 +41,16 @@ const data = [
   {
     year: 2024,
     title: "Full Stack Developer - Fixed-Term Contract - Naiart",
-    duration: "3 months",
+    duration: "5 months",
     details:
       "I am involved in developing an application for Shopify resellers, created from scratch by a team of two using Next.js and Prisma, aimed at automating abandoned cart reminders and marketing campaigns.",
+  },
+  {
+    year: 2024,
+    title: "Co-founder - Full Stack Developer - WallPit",
+    duration: "3 months",
+    details:
+      "Co-founder and full-stack developer at WallPit, a strategy game inspired by chess with unique mechanics. Developed using a microservices architecture with React, Node.js, and MongoDB, this collaborative project aims to deliver a competitive and innovative gaming experience.",
   },
 ];
 const Work = () => {

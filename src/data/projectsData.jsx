@@ -3,8 +3,16 @@ import Pokedex from "../assets/Pokedex.png";
 import Todo from "../assets/Todo.png";
 import Movie from "../assets/Movie.png";
 import Skate from "../assets/SSC.png";
+import Rawg from "../assets/Rawglike.png";
 
 const projects = [
+  {
+    title: "Rawg Like - Game Hub",
+    img: Rawg,
+    description:
+      "Game hub, using rawg API, built with React / TypeScript / Chakra v3.",
+    repoUrl: "https://github.com/Lydoww/game-hub",
+  },
   {
     title: "La Pince",
     img: Lapince,
