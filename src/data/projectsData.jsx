@@ -4,8 +4,16 @@ import Todo from "../assets/Todo.png";
 import Movie from "../assets/Movie.png";
 import Skate from "../assets/SSC.png";
 import Rawg from "../assets/Rawglike.png";
+import Strato from "../assets/Strato.png";
 
 const projects = [
+  {
+    title: "Strato Dashboard - Static Dashboard",
+    img: Strato,
+    description:
+      "A sleek React dashboard using Recharts for dynamic data visualization. It delivers real-time insights with interactive charts and a responsive UI for seamless analytics.",
+    repoUrl: "https://github.com/Lydoww/Admin-Dashboard",
+  },
   {
     title: "Rawg Like - Game Hub",
     img: Rawg,
