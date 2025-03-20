@@ -4,7 +4,7 @@ import Todo from "../assets/Todo.png";
 import Movie from "../assets/Movie.png";
 import Skate from "../assets/SSC.png";
 import Rawg from "../assets/Rawglike.png";
-import strato from "../assets/Strato.png";
+import strato from "../assets/strato.png";
 
 const projects = [
   {
