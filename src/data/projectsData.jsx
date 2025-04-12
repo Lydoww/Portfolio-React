@@ -1,12 +1,19 @@
 import Lapince from "../assets/Lapince.png";
 import Pokedex from "../assets/Pokedex.png";
-import Todo from "../assets/Todo.png";
 import Movie from "../assets/Movie.png";
 import Skate from "../assets/SSC.png";
 import Rawg from "../assets/Rawglike.png";
 import strato from "../assets/strato.png";
+import Pulse from "../assets/PulseChat.png";
 
 const projects = [
+  {
+    title: "PulseChat - Real-time Chat App",
+    img: Pulse,
+    description:
+      "A real-time chat application built with the PERN stack. It features live messaging powered by Socket.io, global state management with Zustand, and a modern, responsive UI using TailwindCSS.",
+    repoUrl: "https://github.com/Lydoww/PERN-CHAT-APP",
+  },
   {
     title: "Strato Dashboard - Static Dashboard",
     img: strato,
@@ -33,12 +40,6 @@ const projects = [
     img: Pokedex,
     description: "Pokedex application with React.",
     repoUrl: "https://github.com/Lydoww/Pokedex-React",
-  },
-  {
-    title: "Todo",
-    img: Todo,
-    description: "A task management app with React & PostgreSQL.",
-    repoUrl: "https://github.com/Lydoww/Todo-App-React",
   },
   {
     title: "Movies",
