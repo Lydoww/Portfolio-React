@@ -5,8 +5,16 @@ import Skate from "../assets/SSC.png";
 import Rawg from "../assets/Rawglike.png";
 import strato from "../assets/strato.png";
 import Pulse from "../assets/PulseChat.png";
+import FlickFlow from "../assets/flickflow.jpg";
 
 const projects = [
+  {
+    title: "FlickFlow - Movie App",
+    img: FlickFlow,
+    description:
+      "FlickFlow is a mobile movie library application built with React Native and Expo Go, powered by Appwrite and the TMDB API. It allows users to browse popular movies, search for specific titles, and save favorites to their personal account. FlickFlow is designed to be simple, clean, and efficient",
+    repoUrl: "https://github.com/Lydoww/REACT-NATIVE-MOVIE-APP",
+  },
   {
     title: "PulseChat - Real-time Chat App",
     img: Pulse,
