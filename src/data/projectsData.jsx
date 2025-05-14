@@ -13,7 +13,7 @@ const projects = [
     title: "WallPit - The board game",
     img: Wallpit,
     description:
-      "Strategic tile-based game where players (2-4) trap opponents by moving 3 squares/turn, leaving blocking walls behind them. It has been build with a microservices architecture using React, Node.js, and MongoDB. The game is inspired by chess but with unique mechanics.",
+      "Strategic tile-based game where players trap opponents by moving 3 squares/turn, leaving blocking walls behind them. It has been build with a microservices architecture using React, Node.js, and MongoDB. The game is inspired by chess but with unique mechanics.",
     repoUrl: "https://discord.gg/S6TphCguqV",
     liveDemo: "https://client-beta.up.railway.app/login",
   },
