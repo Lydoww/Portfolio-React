@@ -141,14 +141,24 @@ const Projects = () => {
                         <p className="text-gray-600 mb-4 flex-grow">
                           {project.description}
                         </p>
-                        <a
-                          href={project.repoUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-block bg-[#001b5e] text-white px-6 py-2 rounded-md hover:bg-[#002a8e] transition-colors mt-auto"
-                        >
-                          More Info
-                        </a>
+                        <div className="flex justify-between">
+                          <a
+                            href={project.liveDemo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block bg-[#001b5e] text-white px-6 py-2 rounded-md hover:bg-[#002a8e] transition-colors mt-auto"
+                          >
+                            More Info
+                          </a>
+                          <a
+                            href={project.liveDemo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block bg-[#001b5e] text-white px-6 py-2 rounded-md hover:bg-[#002a8e] transition-colors mt-auto"
+                          >
+                            Live Demo
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -161,7 +171,10 @@ const Projects = () => {
         {/* 🔥 Icône "Swipe" affichée uniquement sur mobile */}
         {isMobile && (
           <div className="mt-4 flex justify-center items-center">
-            <MdOutlineSwipe size={40} className="text-gray-600 animate-bounce" />
+            <MdOutlineSwipe
+              size={40}
+              className="text-gray-600 animate-bounce"
+            />
           </div>
         )}
       </FadeInSection>
