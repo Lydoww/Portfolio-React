@@ -11,7 +11,7 @@ const Main = () => {
   alt="" 
 />
         <div className='w-full h-screen absolute top-0 left-0 bg-black/40'>
-            <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center'>
+            <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center items-center'>
                 <h1 className='sm:text-6xl text-3xl font-bold text-white'>I'm Alexis Helm</h1>  
                 <h2 className='flex sm:text-4xl text-2xl pt-4 text-white'>I'm a<TypeAnimation
       sequence={[
