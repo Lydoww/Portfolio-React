@@ -143,7 +143,7 @@ const Projects = () => {
                         </p>
                         <div className="flex justify-between">
                           <a
-                            href={project.liveDemo}
+                            href={project.repoUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block bg-[#001b5e] text-white px-6 py-2 rounded-md hover:bg-[#002a8e] transition-colors mt-auto"

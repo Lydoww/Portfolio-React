@@ -6,8 +6,17 @@ import Rawg from "../assets/Rawglike.png";
 import strato from "../assets/strato.png";
 import Pulse from "../assets/PulseChat.png";
 import FlickFlow from "../assets/flickflow.jpg";
+import Wallpit from "../assets/wallpit.png";
 
 const projects = [
+  {
+    title: "WallPit - The board game",
+    img: Wallpit,
+    description:
+      "Strategic tile-based game where players (2-4) trap opponents by moving 3 squares/turn, leaving blocking walls behind them. It has been build with a microservices architecture using React, Node.js, and MongoDB. The game is inspired by chess but with unique mechanics.",
+    repoUrl: "https://discord.gg/S6TphCguqV",
+    liveDemo: "https://client-beta.up.railway.app/login",
+  },
   {
     title: "FlickFlow - Movie App",
     img: FlickFlow,
@@ -53,21 +62,21 @@ const projects = [
     img: Pokedex,
     description: "Pokedex application with React.",
     repoUrl: "https://github.com/Lydoww/Pokedex-React",
-    liveDemo: "https://pokedex-made-with-react.netlify.app/"
+    liveDemo: "https://pokedex-made-with-react.netlify.app/",
   },
   {
     title: "Movies",
     img: Movie,
     description: "Movie App with React and SASS.",
     repoUrl: "https://github.com/Lydoww/Movie-App",
-    liveDemo: "https://react-sass-movie-app.netlify.app/"
+    liveDemo: "https://react-sass-movie-app.netlify.app/",
   },
   {
     title: "Sunset Skate Club",
     img: Skate,
     description: "Skate Ecommerce built with React / TypeScript / TailwindCSS.",
     repoUrl: "https://github.com/Lydoww/Skate-Sunset-Club",
-    liveDemo: "https://sunsetskateclub.netlify.app/"
+    liveDemo: "https://sunsetskateclub.netlify.app/",
   },
 ];
 
