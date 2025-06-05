@@ -1,4 +1,3 @@
-import React from "react";
 import FadeInSection from "./FadeInSection"; // Assurez-vous que ce chemin est correct
 
 const Contact = () => {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { MdOutlineSwipe, MdChevronLeft, MdChevronRight } from "react-icons/md"; // Import des icônes
 import FadeInSection from "./FadeInSection";
 import projects from "../data/projectsData";

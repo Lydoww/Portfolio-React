@@ -1,5 +1,3 @@
-import React from "react";
-
 const WorkItem = ({ year, title, duration, details }) => {
   return (
     <ol className="flex flex-col md:flex-row relative border-l border-stone-200">
@@ -29,11 +27,15 @@ const WorkItem = ({ year, title, duration, details }) => {
                           href={item.url || "#"}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className={`${item.url ? "text-[#001b5e] hover:underline" : ""}`}
+                          className={`${
+                            item.url ? "text-[#001b5e] hover:underline" : ""
+                          }`}
                         >
                           {item.project}
-                        </a>:
-                      </strong> {item.description}
+                        </a>
+                        :
+                      </strong>{" "}
+                      {item.description}
                     </>
                   )}
                 </li>

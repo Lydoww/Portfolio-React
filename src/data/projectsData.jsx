@@ -7,6 +7,7 @@ import strato from "../assets/strato.png";
 import Pulse from "../assets/PulseChat.png";
 import FlickFlow from "../assets/flickflow.jpg";
 import Wallpit from "../assets/wallpit.png";
+import NovaShop from "../assets/NovaShop.png";
 
 const projects = [
   {
@@ -32,6 +33,14 @@ const projects = [
       "A real-time chat application built with the PERN stack. It features live messaging powered by Socket.io, global state management with Zustand, and a modern, responsive UI using TailwindCSS.",
     repoUrl: "https://github.com/Lydoww/PERN-CHAT-APP",
     liveDemo: "https://pern-chat-app-ibpf.onrender.com/",
+  },
+  {
+    title: "NovaShop - Modern E-commerce Showcase",
+    img: NovaShop,
+    description:
+      "NovaShop is a clean and modern e-commerce storefront designed as a client-facing demo. Built with React and TailwindCSS, it features product filtering, dynamic routing, a checkout flow, and state management via React Context and TanStack Query. The app integrates the FakeStoreAPI to simulate real product data, making it ideal for showcasing design, UI/UX, and front-end architecture for potential e-commerce clients.",
+    repoUrl: "https://github.com/Lydoww/NovaShop",
+    liveDemo: "https://ecommerce-two-gray-92.vercel.app/",
   },
   {
     title: "Strato Dashboard - Static Dashboard",
