@@ -38,7 +38,7 @@ const projects = [
     title: "NovaShop - Modern E-commerce Showcase",
     img: NovaShop,
     description:
-      "NovaShop is a clean and modern e-commerce storefront designed as a client-facing demo. Built with React and TailwindCSS, it features product filtering, dynamic routing, a checkout flow, and state management via React Context and TanStack Query. The app integrates the FakeStoreAPI to simulate real product data, making it ideal for showcasing design, UI/UX, and front-end architecture for potential e-commerce clients.",
+      "NovaShop is a clean and modern e-commerce project built with React, Tailwind CSS, TanStack, and React Context. The storefront is designed as a client-facing demo. ",
     repoUrl: "https://github.com/Lydoww/NovaShop",
     liveDemo: "https://ecommerce-two-gray-92.vercel.app/",
   },
