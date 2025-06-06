@@ -40,7 +40,7 @@ const projects = [
     description:
       "NovaShop is a clean and modern e-commerce project built with React, Tailwind CSS, TanStack, and React Context. The storefront is designed as a client-facing demo. ",
     repoUrl: "https://github.com/Lydoww/NovaShop",
-    liveDemo: "https://ecommerce-two-gray-92.vercel.app/",
+    liveDemo: "https://novashop-delta.vercel.app/",
   },
   {
     title: "Strato Dashboard - Static Dashboard",
