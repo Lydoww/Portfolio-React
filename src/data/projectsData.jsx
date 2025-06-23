@@ -8,6 +8,7 @@ import Pulse from "../assets/PulseChat.png";
 import FlickFlow from "../assets/flickflow.jpg";
 import Wallpit from "../assets/wallpit.png";
 import NovaShop from "../assets/NovaShop.png";
+import ArtConnect from "../assets/ArtConnect.png";
 
 const projects = [
   {
@@ -17,6 +18,15 @@ const projects = [
       "Strategic tile-based game where players trap opponents by moving 3 squares/turn, leaving blocking walls behind them. It has been build with a microservices architecture using React, Node.js, and MongoDB. The game is inspired by chess but with unique mechanics.",
     repoUrl: "https://discord.gg/S6TphCguqV",
     liveDemo: "https://client-beta.up.railway.app/login",
+  },
+  {
+    title: "ArtConnect – Explore the World Through Artists",
+    img: ArtConnect,
+    description:
+      "A modern React application leveraging the Rijksmuseum API to explore artworks and artists. Features include real-time search with debounced suggestions, Firebase-authenticated favorites sync, and downloadable high-res images. Built with React 19, Zustand for state management, and Framer Motion for animations, this showcase project demonstrates clean architecture, responsive design, and API integration skills.",
+    repoUrl:
+      "https://github.com/Lydoww/ArtConnect-Explore-the-World-Through-Artists",
+    liveDemo: "https://art-connect-explore-artists.vercel.app/",
   },
   {
     title: "FlickFlow - Movie App",
